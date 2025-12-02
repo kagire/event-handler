@@ -17,6 +17,7 @@ cd ./../consumer
 mvn compile jib:dockerBuild
 ```
 
+In project root (`cd ..`):  
 ```console
 docker-compose up -d rabbit postgres
 docker-compose run --rm -it publisher
@@ -26,4 +27,6 @@ In a **separate** console:
 docker-compose run --rm consumer
 ```
 
+## Usage
 
+**Publisher** console contains instructions for event creation, **Consumer** prints result
