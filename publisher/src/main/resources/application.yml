@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+rabbit:
+  queue: events
+  exchange: events
+  routingKey: all
+
+db:
+  url: jdbc:postgresql://localhost:5432/some_events
+  driver: org.postgresql.Driver
+  username: postgres
+  password: 1234
